@@ -67,7 +67,7 @@ LIMIT 1"""
 
 best_performing()
 
-# query my table to print the best performing student across all nine subjects 
+# query my table to print the best performing student across all subjects 
 def avg_best_performing():
     query = """SELECT student_name, AVG(english+mathematics+biology+economics+christian_religious_studies+government+history+literature+fine_arts) AS total FROM result
 ORDER BY total DESC

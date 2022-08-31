@@ -1,7 +1,6 @@
 # Importing my dependencies
 import sqlite3
 import csv
-from unittest import result
 
 # creating my database
 conn = sqlite3.connect("WAEC.db")
@@ -27,8 +26,8 @@ table = """CREATE TABLE result (
 c.execute(table)
 
 # to open my csv file and read its contents using the csv module
-with open('./result.csv', "r") as o:
-    reader = csv.reader(o)
+with open('result.csv', "r") as u:
+    reader = csv.reader(u)
     
     # to insert the values of my read file into my sqlite table
     c.executemany("""
